@@ -1,12 +1,8 @@
+import json
 import requests
-import simplejson
-from pypygo.models import (Response,
-                           RelatedTopic,
-                           Result,
-                           Icon,
-                           Infobox,
-                           InfoboxContent,
-                           InfoboxMeta)
+
+from pypygo.models import Response, RelatedTopic, Result
+from pypygo.models import Icon, Infobox, InfoboxContent, InfoboxMeta
 
 
 def query(qry):
@@ -17,15 +13,19 @@ def query(qry):
     return resp.json(cls=ResponseDecoder)
 
 
-class ResponseDecoder(simplejson.JSONDecoder):
-    def decode(self, json):
-        json = super().decode(json)
+class ResponseDecoder(json.JSONDecoder):
+    def decode(self, raw_json):
+        jsn = super().decode(raw_json)
         related_topics = [RelatedTopic(t, Icon(t['Icon']))
-                          for t in json['RelatedTopics']]
-        infobox = Infobox([InfoboxContent(c)
-                           for c in json['Infobox']['content']],
-                          [InfoboxMeta(m)
-                           for m in json['Infobox']['meta']])
+                          for t in jsn['RelatedTopics']]
+        raw_infbx = jsn['Infobox']
+        if hasattr(raw_infbx, 'get'):
+            infobox = Infobox([InfoboxContent(c)
+                              for c in raw_infbx['content']],
+                              [InfoboxMeta(m)
+                              for m in raw_infbx['meta']])
+        else:
+            infobox = []
         results = [Result(r, Icon(r['Icon']))
-                          for r in json['Results']]
-        return Response(json, related_topics, infobox, results)
+                          for r in jsn['Results']]
+        return Response(jsn, related_topics, infobox, results)
