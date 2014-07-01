@@ -1,0 +1,81 @@
+{
+   "DefinitionSource" : "",
+   "Heading" : "foobar",
+   "ImageWidth" : 152,
+   "RelatedTopics" : [
+      {
+         "Result" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+         "Icon" : {
+            "URL" : "",
+            "Height" : "",
+            "Width" : ""
+         },
+         "FirstURL" : "http://python.org",
+         "Text" : "Tag editors"
+      },
+      {
+         "Result" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+         "Icon" : {
+            "URL" : "",
+            "Height" : "",
+            "Width" : ""
+         },
+         "FirstURL" : "http://python.org",
+         "Text" : "Lorem ipsum"
+      }
+   ],
+   "Type" : "A",
+   "Redirect" : "",
+   "DefinitionURL" : "",
+   "AbstractURL" : "http://python.org",
+   "Definition" : "",
+   "AbstractSource" : "Wikipedia",
+   "Infobox" : {
+      "content" : [
+         {
+            "data_type" : "string",
+            "value" : "foo",
+            "label" : "Developer(s)",
+            "wiki_order" : 0
+         },
+         {
+            "data_type" : "string",
+            "value" : "01 Januar 1970",
+            "label" : "Initial release",
+            "wiki_order" : 1
+         }
+      ],
+      "meta" : [
+         {
+            "data_type" : "string",
+            "value" : "foobar",
+            "label" : "article_title"
+         },
+         {
+            "data_type" : "string",
+            "value" : "infobox software",
+            "label" : "template_name"
+         }
+      ]
+   },
+   "Image" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+   "ImageIsLogo" : 1,
+   "Abstract" : "no abstract",
+   "AbstractText" : "no abstract text",
+   "AnswerType" : "",
+   "ImageHeight" : 200,
+   "Results" : [
+      {
+         "Result" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+         "Icon" : {
+            "URL" : "https://python.org",
+            "Height" : 16,
+            "Width" : 16
+         },
+         "FirstURL" : "http://www.python.org",
+         "Text" : "Official site"
+      }
+   ],
+   "Answer" : ""
+}
+

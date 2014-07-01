@@ -1,6 +1,6 @@
 import json
-import requests
 
+import requests
 from pypygo.models import Response, RelatedTopic, Result
 from pypygo.models import Icon, Infobox, InfoboxContent, InfoboxMeta
 

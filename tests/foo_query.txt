@@ -1,0 +1,42 @@
+{
+   "DefinitionSource" : "definition source",
+   "Heading" : "Foo",
+   "ImageWidth" : 0,
+   "RelatedTopics" : [
+      {
+         "Result" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+         "Icon" : {
+            "URL" : "",
+            "Height" : "",
+            "Width" : ""
+         },
+         "FirstURL" : "http://python.org",
+         "Text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      },
+      {
+         "Result" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+         "Icon" : {
+            "URL" : "https://duckduckgo.com/i/6efcfebd.jpg",
+            "Height" : "",
+            "Width" : ""
+         },
+         "FirstURL" : "http://python.org",
+         "Text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      }
+   ],
+   "Type" : "D",
+   "Redirect" : "no redirect",
+   "DefinitionURL" : "no definition url",
+   "AbstractURL" : "https://en.wikipedia.org/wiki/Foo_(disambiguation)",
+   "Definition" : "no definition",
+   "AbstractSource" : "Wikipedia",
+   "Infobox" : "",
+   "Image" : "",
+   "ImageIsLogo" : 0,
+   "Abstract" : "no abstract",
+   "AbstractText" : "no abstract text",
+   "AnswerType" : "",
+   "ImageHeight" : 0,
+   "Results" : [],
+   "Answer" : ""
+}
