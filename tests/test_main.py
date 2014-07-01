@@ -1,3 +1,4 @@
+import os
 import unittest
 from unittest.mock import Mock
 from unittest.mock import patch
@@ -8,12 +9,9 @@ import pypygo
 class TestMainFunctions(unittest.TestCase):
 
     def test_query_foo(self, mock_requests):
-        def decode(cls):
-            with open('foo_query.txt') as f:
-                raw_json = ''.join(f.readlines())
-                return cls().decode(raw_json)
+        side_effect = lambda cls: self._decode('foo_query.txt', cls)
         mock_response = Mock()
-        mock_response.json.side_effect = decode
+        mock_response.json.side_effect = side_effect 
         mock_requests.get.return_value = mock_response
         response = pypygo.query('foo')
         params = {'q': 'foo',
@@ -31,12 +29,9 @@ class TestMainFunctions(unittest.TestCase):
                                                   params=params)
 
     def test_query_foobar(self, mock_requests):
-        def decode(cls):
-            with open('foobar_query.txt') as f:
-                raw_json = ''.join(f.readlines())
-                return cls().decode(raw_json)
+        side_effect = lambda cls: self._decode('foobar_query.txt', cls)
         mock_response = Mock()
-        mock_response.json.side_effect = decode
+        mock_response.json.side_effect = side_effect
         mock_requests.get.return_value = mock_response
         response = pypygo.query('foo')
         params = {'q': 'foo',
@@ -53,6 +48,14 @@ class TestMainFunctions(unittest.TestCase):
         self.assertEqual(len(response.results), 1)
         mock_requests.get.assert_called_once_with('https://api.duckduckgo.com',
                                                   params=params)
+
+    def _decode(self, file_name, decoder):
+        dirpath = os.path.dirname(os.path.realpath(__file__))
+        filepath = os.path.join(dirpath, file_name)
+        with open(filepath) as f:
+            raw_json = ''.join(f.readlines())
+            return decoder().decode(raw_json)
+
 
 if __name__ == '__main__':
     unittest.main()
