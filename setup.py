@@ -16,8 +16,5 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules'
     ],
     keywords='duckduckgo duck search engine privacy',
-    install_requires=[
-        'requests>=2.3.0',
-        'simplejson>=3.5.3'
-    ]
+    install_requires=['requests>=2.3.0']
 )
