@@ -1,4 +1,4 @@
-pypygo - A Python wrapper for the DuckDuckGo instant answer API
+pypygo
 ======
 
 .. image:: https://travis-ci.org/ScreenDriver/pypygo.svg?branch=master
@@ -10,7 +10,10 @@ pypygo - A Python wrapper for the DuckDuckGo instant answer API
 .. image:: https://pypip.in/d/pypygo/badge.png
         :target: https://crate.io/packages/pypygo/
 
+pypygo - A Python wrapper for the DuckDuckGo instant answer API
+
 .. code-block:: pycon
+
     >>> import pypygo
     >>> q = pypygo.query('GitHub')
     >>> q.abstract
