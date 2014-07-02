@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='pypygo',
     description='A Python wrapper for the DuckDuckGo instant answer API',
-    version='0.1.0',
+    version='0.1.1',
     author='RaspberryRice',
     author_email='christian@echooff.de',
     license='MIT',
