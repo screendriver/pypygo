@@ -23,3 +23,13 @@ pypygo - A Python wrapper for the DuckDuckGo instant answer API
     ...
 
 See the official `DuckDuckGo API <https://duckduckgo.com/api>`_.
+
+
+Installation
+------------
+
+To install Requests, simply:
+
+.. code-block:: bash
+
+    $ pip install requests
