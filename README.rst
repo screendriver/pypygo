@@ -2,10 +2,10 @@ pypygo
 ======
 
 .. image:: https://travis-ci.org/ScreenDriver/pypygo.svg?branch=master
-    :target:(https://travis-ci.org/ScreenDriver/pypygo
+        :target:(https://travis-ci.org/ScreenDriver/pypygo
 
 .. image:: https://badge.fury.io/py/pypygo.png
-    :target: http://badge.fury.io/py/pypygo
+        :target: http://badge.fury.io/py/pypygo
 
 .. image:: https://pypip.in/d/pypygo/badge.png
         :target: https://crate.io/packages/pypygo/
