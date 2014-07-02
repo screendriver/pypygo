@@ -32,4 +32,4 @@ To install pypygo, simply:
 
 .. code-block:: bash
 
-    $ pip install requests
+    $ pip install pypygo
