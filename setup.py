@@ -8,6 +8,7 @@ setup(
     author_email='christian@echooff.de',
     license='MIT',
     url='https://github.com/ScreenDriver/pypygo',
+    packages=['pypygo'],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
