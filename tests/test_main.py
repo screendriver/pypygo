@@ -16,6 +16,7 @@ class TestMainFunctions(unittest.TestCase):
         response = pypygo.query('foo')
         params = {'q': 'foo',
                   'format': 'json',
+                  't': 'pypygo',
                   'pretty': 0}
         self.assertEqual(response.abstract, 'no abstract')
         self.assertEqual(response.abstract_text, 'no abstract text')
@@ -36,6 +37,7 @@ class TestMainFunctions(unittest.TestCase):
         response = pypygo.query('foo')
         params = {'q': 'foo',
                   'format': 'json',
+                  't': 'pypygo',
                   'pretty': 0}
         self.assertEqual(response.abstract, 'no abstract')
         self.assertEqual(response.abstract_text, 'no abstract text')

@@ -8,6 +8,7 @@ from pypygo.models import Icon, Infobox, InfoboxContent, InfoboxMeta
 def query(qry):
     params = {'q': qry,
               'format': 'json',
+              't': 'pypygo',
               'pretty': 0}
     resp = requests.get('https://api.duckduckgo.com', params=params)
     return resp.json(cls=ResponseDecoder)
