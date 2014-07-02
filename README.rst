@@ -28,7 +28,7 @@ See the official `DuckDuckGo API <https://duckduckgo.com/api>`_.
 Installation
 ------------
 
-To install Requests, simply:
+To install pypygo, simply:
 
 .. code-block:: bash
 
