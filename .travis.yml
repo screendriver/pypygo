@@ -1,8 +1,13 @@
 language: python
+
 python:
   - "3.4"
   - "3.3"
 
 install: "pip install -r requirements.txt"
+
+before_script:
+    - "pep8 pypygo"
+    - "pep8 tests"
+
 script: python -m unittest
-script: pep8 pypygo

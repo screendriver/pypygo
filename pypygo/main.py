@@ -28,5 +28,5 @@ class ResponseDecoder(json.JSONDecoder):
         else:
             infobox = []
         results = [Result(r, Icon(r['Icon']))
-                          for r in jsn['Results']]
+                   for r in jsn['Results']]
         return Response(jsn, related_topics, infobox, results)
