@@ -19,8 +19,5 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules'
     ],
     keywords='duckduckgo ddg ddgo search engine privacy',
-    install_requires=[
-        'requests>=2.3.0',
-        'pep8>=1.5.7'
-    ]
+    install_requires=['requests>=2.3.0']
 )
