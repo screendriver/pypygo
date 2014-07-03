@@ -5,13 +5,14 @@ from unittest.mock import patch
 
 import pypygo
 
+
 @patch('pypygo.main.requests')
 class TestMainFunctions(unittest.TestCase):
 
     def test_query_foo(self, mock_requests):
         side_effect = lambda cls: self._decode('foo_query.txt', cls)
         mock_response = Mock()
-        mock_response.json.side_effect = side_effect 
+        mock_response.json.side_effect = side_effect
         mock_requests.get.return_value = mock_response
         response = pypygo.query('foo')
         params = {'q': 'foo',
