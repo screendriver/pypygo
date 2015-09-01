@@ -1,8 +1,8 @@
 pypygo
 ======
 
-.. image:: https://travis-ci.org/ScreenDriver/pypygo.svg?branch=master
-        :target: https://travis-ci.org/ScreenDriver/pypygo
+.. image:: https://travis-ci.org/screendriver/pypygo.svg?branch=master
+        :target: https://travis-ci.org/screendriver/pypygo
 
 .. image:: https://badge.fury.io/py/pypygo.png
         :target: http://badge.fury.io/py/pypygo

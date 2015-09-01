@@ -5,9 +5,9 @@ setup(
     description='A Python wrapper for the DuckDuckGo instant answer API',
     version='0.1.1',
     author='RaspberryRice',
-    author_email='christian@echooff.de',
+    author_email='github@echooff.de',
     license='MIT',
-    url='https://github.com/ScreenDriver/pypygo',
+    url='https://github.com/screendriver/pypygo',
     packages=['pypygo'],
     classifiers=[
         'Development Status :: 3 - Alpha',
